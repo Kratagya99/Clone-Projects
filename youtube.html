@@ -41,13 +41,10 @@
         margin-right:15px;
       }
       .channel-picture{
-        display:inline-block;
-        width:50px;
-        vertical-align: top;
+        
       }
       .video-info{
-        display: inline-block;
-        width:200px;
+        
     }
     .video-author,
     .video-stats{
@@ -57,6 +54,10 @@
     .video-author{
       margin-bottom:4px;
     }
+    .video-info-grid{
+      display:grid;
+      grid-template-columns: 50px 1fr;
+    }
     </style>
   </head>
   <body>
@@ -65,7 +66,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img  class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg">
             </div>
