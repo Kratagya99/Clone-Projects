@@ -1,0 +1,31 @@
+{
+  "name": "video-social-platform",
+  "version": "1.0.0",
+  "description": "A social media platform for 10-second videos with location-based discovery",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["social", "video", "platform", "location"],
+  "author": "Your Name",
+  "license": "MIT"
+}
